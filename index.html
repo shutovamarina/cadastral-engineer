@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кадастровый инженер — Карпенко Полина Дмитриевна</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <div class="logo-icon">
+                <img src="img/logo1 (1).png" alt="logo">
+            </div>
+            <span>Кадастровый<br>инженер</span>
+        </div>
+        <div class="header-center">
+            <div><a href="tel:+79146636131">+7 (914) 663-61-31</a></div>
+            <div><a href="mailto:kpd.karpenko@mail.ru">kpd.karpenko@mail.ru</a></div>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="#about" onclick="closeNav()">О нас</a></li>
+                <li><a href="#services" onclick="closeNav()">Услуги</a></li>
+                <li><a href="#prices" onclick="closeNav()">Цены</a></li>
+                <li><a href="#stages" onclick="closeNav()">Этапы работы</a></li>
+                <li><a href="#education" onclick="closeNav()">Образование</a></li>
+                <li><a href="#faq" onclick="closeNav()">Вопросы и ответы</a></li>
+                <li><a href="#contacts" onclick="closeNav()">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="burger" onclick="toggleNav()">
+            <span></span><span></span><span></span>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-inner">
+            <h1>Кадастровый инженер</h1>
+            <p>Точность границ. Надёжность документов. Профессиональный подход к каждому участку.</p>
+            <div class="hero-buttons">
+                <a href="#contacts" class="btn btn-filled">Связаться</a>
+                <a href="#about" class="btn">Подробнее</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <!--  <section id="about">
+        <h2 class="section-title">О нас</h2>
+        <p class="section-subtitle">Профессионализм, проверенный временем</p>
+        <div class="about-block">
+            <p>ИП Карпенко Полина Дмитриевна — сертифицированный кадастровый инженер с многолетним опытом работы в сфере землеустройства и кадастровых работ на территории Приморского края.</p>
+            <p>Мы специализируемся на проведении комплексных кадастровых работ любой сложности: от межевания земельных участков до подготовки технических планов зданий и сооружений. Каждый проект выполняется с соблюдением действующего законодательства и
+                использованием современного геодезического оборудования.</p>
+            <p>Наша цель — обеспечить клиентов точными, юридически корректными документами, которые станут надёжной основой для распоряжения недвижимостью. Мы ценим доверие заказчиков и стремимся к долгосрочному сотрудничеству.</p>
+        </div>
+    </section> -->
+
+    <!-- SERVICES -->
+    <!--   <section id="services">
+        <h2 class="section-title">Услуги</h2>
+        <p class="section-subtitle">Полный спектр кадастровых работ</p>
+        <div class="services-grid">
+            <div class="service-card" onclick="scrollToPrice(0)">
+                <div class="service-img"><img src="https://image.qwenlm.ai/public_source/4e14336b-8131-4f75-9221-51b4b76d4a1d/14a7d464f-bd83-4837-bba9-f201b625ec17.png" alt=""></div>
+                <div class="service-content">
+                    <h3>Межевание участков</h3>
+                    <p>Определение границ и площади земельных участков</p>
+                </div>
+            </div>
+            <div class="service-card" onclick="scrollToPrice(1)">
+                <div class="service-img"><img src="https://image.qwenlm.ai/public_source/4e14336b-8131-4f75-9221-51b4b76d4a1d/11e7af29e-0889-4adb-8cbd-4edfa9f79a08.png" alt=""></div>
+                <div class="service-content">
+                    <h3>Технический план</h3>
+                    <p>Подготовка документов для регистрации объектов</p>
+                </div>
+            </div>
+            <div class="service-card" onclick="scrollToPrice(2)">
+                <div class="service-img"><img src="https://image.qwenlm.ai/public_source/4e14336b-8131-4f75-9221-51b4b76d4a1d/124861d60-8e81-40f6-9b7c-07df76e4fd6d.png" alt=""></div>
+                <div class="service-content">
+                    <h3>Аэрофотосъёмка</h3>
+                    <p>Съёмка территорий с применением БПЛА</p>
+                </div>
+            </div>
+            <div class="service-card" onclick="scrollToPrice(3)">
+                <div class="service-img"><img src="https://image.qwenlm.ai/public_source/4e14336b-8131-4f75-9221-51b4b76d4a1d/160cff7ea-3d83-4e82-9957-3e23db644c98.png" alt=""></div>
+                <div class="service-content">
+                    <h3>Топографическая съёмка</h3>
+                    <p>Создание планов местности в требуемом масштабе</p>
+                </div>
+            </div>
+            <div class="service-card" onclick="scrollToPrice(4)">
+                <div class="service-img"><img src="https://image.qwenlm.ai/public_source/4e14336b-8131-4f75-9221-51b4b76d4a1d/1f5057358-7371-477d-bbf4-62c4cc7e5bff.png" alt=""></div>
+                <div class="service-content">
+                    <h3>Вынос границ</h3>
+                    <p>Установка межевых знаков на местности</p>
+                </div>
+            </div>
+            <div class="service-card" onclick="scrollToPrice(5)">
+                <div class="service-img"><img src="https://image.qwenlm.ai/public_source/4e14336b-8131-4f75-9221-51b4b76d4a1d/10754d88c-01ce-48ac-8092-d27456b525cb.png" alt=""></div>
+                <div class="service-content">
+                    <h3>Землеустроительная документация</h3>
+                    <p>Разработка проектов межевания территорий</p>
+                </div>
+            </div>
+            <div class="service-card" onclick="scrollToPrice(6)">
+                <div class="service-img"><img src="https://image.qwenlm.ai/public_source/4e14336b-8131-4f75-9221-51b4b76d4a1d/1cf05644c-6ffd-4263-9240-575965ad6aee.png" alt=""></div>
+                <div class="service-content">
+                    <h3>Регистрация в Росреестре</h3>
+                    <p>Сопровождение постановки на кадастровый учёт</p>
+                </div>
+            </div>
+            <div class="service-card" onclick="scrollToPrice(7)">
+                <div class="service-img"><img src="https://image.qwenlm.ai/public_source/4e14336b-8131-4f75-9221-51b4b76d4a1d/16cb2be08-d04e-452a-b8fd-12265c193949.png" alt=""></div>
+                <div class="service-content">
+                    <h3>Раздел и объединение участков</h3>
+                    <p>Изменение конфигурации земельных наделов</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- PRICES -->
+    <!--   <section id="prices">
+        <h2 class="section-title">Цены на услуги</h2>
+        <p class="section-subtitle">Прозрачное ценообразование</p>
+
+        <div class="price-row">
+            <div class="price-header" onclick="togglePrice(this)">
+                <h3>Межевание земельного участка</h3>
+                <span class="price-tag">от 8 000 руб.</span>
+                <span class="price-toggle">+</span>
+            </div>
+            <div class="price-body">
+                <p>Определение и уточнение границ земельного участка с подготовкой межевого плана. Включает выезд на местность, геодезические измерения, согласование границ с соседями и формирование документов для Росреестра. Срок выполнения — от 10 рабочих
+                    дней.
+                </p>
+            </div>
+        </div>
+
+        <div class="price-row">
+            <div class="price-header" onclick="togglePrice(this)">
+                <h3>Подготовка технического плана здания</h3>
+                <span class="price-tag">от 12 000 руб.</span>
+                <span class="price-toggle">+</span>
+            </div>
+            <div class="price-body">
+                <p>Технический план жилого дома, нежилого здания или сооружения для постановки на кадастровый учёт и регистрации права собственности. Включает обмеры, подготовку чертежей и электронного документа с усиленной подписью.</p>
+            </div>
+        </div>
+
+        <div class="price-row">
+            <div class="price-header" onclick="togglePrice(this)">
+                <h3>Аэрофотосъёмка территории</h3>
+                <span class="price-tag">от 15 000 руб.</span>
+                <span class="price-toggle">+</span>
+            </div>
+            <div class="price-body">
+                <p>Выполнение аэрофотосъёмки с применением беспилотных летательных аппаратов. Создание ортофотопланов, цифровых моделей рельефа и карт местности. Применяется для крупных территорий и сложных объектов.</p>
+            </div>
+        </div>
+
+        <div class="price-row">
+            <div class="price-header" onclick="togglePrice(this)">
+                <h3>Топографическая съёмка</h3>
+                <span class="price-tag">от 10 000 руб.</span>
+                <span class="price-toggle">+</span>
+            </div>
+            <div class="price-body">
+                <p>Съёмка ситуации и рельефа местности для проектирования, получения разрешения на строительство или подключения коммуникаций. Масштаб от 1:500 до 1:5000. Результат — топографический план в электронном и печатном виде.</p>
+            </div>
+        </div>
+
+        <div class="price-row">
+            <div class="price-header" onclick="togglePrice(this)">
+                <h3>Вынос границ участка в натуру</h3>
+                <span class="price-tag">от 6 000 руб.</span>
+                <span class="price-toggle">+</span>
+            </div>
+            <div class="price-body">
+                <p>Определение и закрепление на местности границ земельного участка в соответствии с данными ЕГРН. Установка межевых знаков, составление акта выноса. Необходимо при покупке участка, строительстве или разрешении споров.</p>
+            </div>
+        </div>
+
+        <div class="price-row">
+            <div class="price-header" onclick="togglePrice(this)">
+                <h3>Землеустроительная документация</h3>
+                <span class="price-tag">от 25 000 руб.</span>
+                <span class="price-toggle">+</span>
+            </div>
+            <div class="price-body">
+                <p>Разработка проектов межевания территорий, схем расположения земельных участков, проектов перераспределения земель. Подготовка документации для администраций и государственных заказчиков.</p>
+            </div>
+        </div>
+
+        <div class="price-row">
+            <div class="price-header" onclick="togglePrice(this)">
+                <h3>Регистрация в Росреестре</h3>
+                <span class="price-tag">от 5 000 руб.</span>
+                <span class="price-toggle">+</span>
+            </div>
+            <div class="price-body">
+                <p>Сопровождение процедуры постановки объекта недвижимости на кадастровый учёт и регистрации права собственности. Подготовка полного пакета документов, подача через МФЦ или в электронном виде, контроль статуса.</p>
+            </div>
+        </div>
+
+        <div class="price-row">
+            <div class="price-header" onclick="togglePrice(this)">
+                <h3>Раздел и объединение участков</h3>
+                <span class="price-tag">от 14 000 руб.</span>
+                <span class="price-toggle">+</span>
+            </div>
+            <div class="price-body">
+                <p>Подготовка межевого плана при разделе существующего участка на несколько частей или объединении смежных участков. Включает согласование, геодезические работы и регистрацию изменений в ЕГРН.</p>
+            </div>
+        </div>
+
+        <div class="price-cta">
+            <button class="btn btn-filled" onclick="openModal()">Запросить коммерческое предложение</button>
+        </div>
+    </section> -->
+
+    <!-- STAGES -->
+    <!--   <section id="stages">
+        <h2 class="section-title">Этапы работы</h2>
+        <p class="section-subtitle">Как мы работаем с вашим проектом</p>
+        <div class="stages-grid">
+            <div class="stage-card">
+                <div class="stage-num">01</div>
+                <h3>Обращение клиента</h3>
+                <p>Вы связываетесь с нами любым удобным способом. Обсуждаем задачу, уточняем детали и объём работ.</p>
+            </div>
+            <div class="stage-card">
+                <div class="stage-num">02</div>
+                <h3>Заключение договора</h3>
+                <p>Согласовываем стоимость и сроки, подписываем договор на выполнение кадастровых работ.</p>
+            </div>
+            <div class="stage-card">
+                <div class="stage-num">03</div>
+                <h3>Сбор документов</h3>
+                <p>Получаем необходимые выписки из ЕГРН, правоустанавливающие документы и исходные данные.</p>
+            </div>
+            <div class="stage-card">
+                <div class="stage-num">04</div>
+                <h3>Полевые работы</h3>
+                <p>Выезд на местность, геодезические измерения, фиксация границ и характеристик объекта.</p>
+            </div>
+            <div class="stage-card">
+                <div class="stage-num">05</div>
+                <h3>Камеральная обработка</h3>
+                <p>Подготовка межевого или технического плана, формирование электронного документа с ЭП.</p>
+            </div>
+            <div class="stage-card">
+                <div class="stage-num">06</div>
+                <h3>Сдача результата</h3>
+                <p>Передача готовых документов заказчику, при необходимости — сопровождение регистрации.</p>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="education">
+        <h2 class="section-title">Образование</h2>
+        <p class="section-subtitle">Дипломы и сертификаты</p>
+        <div class="carousel-section">
+            <div class="carousel-container">
+                <!-- <button class="carousel-btn prev" onclick="moveCarousel(-1)">‹</button> -->
+                <div class="carousel-viewport">
+                    <div class="carousel-track" id="carouselTrack">
+                        <div class="diploma-card" onclick="openLightbox(this)">
+                            <img src="img/diplom/file-1 2.jpg.jpeg" alt="Диплом">
+                        </div>
+                        <div class="diploma-card diploma-vertical" onclick="openLightbox(this)">
+                            <img src="img/diplom/Выписка из реестра 1785413150941_page-0001.jpg" alt="Выписка">
+                        </div>
+                        <div class="diploma-card" onclick="openLightbox(this)">
+                            <img src="img/diplom/file-1 3.jpg.jpeg" alt="Диплом">
+                        </div>
+                    </div>
+                </div>
+                <!-- <button class="carousel-btn next" onclick="moveCarousel(1)">›</button> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <!-- <section id="faq">
+        <h2 class="section-title">Вопросы и ответы</h2>
+        <p class="section-subtitle">Часто задаваемые вопросы</p>
+
+        <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">
+                <span>Какие документы нужны для межевания участка?</span>
+                <span class="faq-arrow">&#9947;</span>
+            </div>
+            <div class="faq-a">
+                <p>Для проведения межевания потребуются правоустанавливающие документы на земельный участок (свидетельство о собственности, договор купли-продажи и т.д.), паспорт заказчика, выписка из ЕГРН. При наличии — ранее оформленный межевой план.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">
+                <span>Сколько времени занимает выполнение работ?</span>
+                <span class="faq-arrow">&#9947;</span>
+            </div>
+            <div class="faq-a">
+                <p>Сроки зависят от сложности и объёма работ. В среднем межевание участка выполняется за 10–15 рабочих дней, технический план — за 7–10 дней. Точные сроки согласовываются при заключении договора.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">
+                <span>Работаете ли вы с юридическими лицами?</span>
+                <span class="faq-arrow">&#9947;</span>
+            </div>
+            <div class="faq-a">
+                <p>Да, мы работаем как с физическими, так и с юридическими лицами. Для организаций возможен безналичный расчёт, подготовка закрывающих документов и работа по договору с НДС или без.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">
+                <span>Можно ли провести работы без присутствия собственника?</span>
+                <span class="faq-arrow">&#9947;</span>
+            </div>
+            <div class="faq-a">
+                <p>Да, при наличии нотариально оформленной доверенности работы могут быть выполнены без личного присутствия собственника. Однако согласование границ с соседями требует их участия или оформления согласия заранее.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">
+                <span>Что входит в стоимость услуг?</span>
+                <span class="faq-arrow">&#9947;</span>
+            </div>
+            <div class="faq-a">
+                <p>В стоимость входят все геодезические работы, камеральная обработка, подготовка электронного документа с усиленной квалифицированной подписью кадастрового инженера. Государственные пошлины и услуги Росреестра оплачиваются отдельно.</p>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- CONTACTS -->
+    <section id="contacts">
+        <h2 class="section-title">Контакты</h2>
+        <p class="section-subtitle">Свяжитесь с нами удобным способом</p>
+        <div class="contacts-grid">
+            <div class="contact-block contact-info">
+                <h3>Контакты</h3>
+                <div class="label">Телефон</div>
+                <p><a href="tel:+79146636131">+7 (914) 663-61-31</a></p>
+                <div class="label">E-mail</div>
+                <p><a href="mailto:kpd.karpenko@mail.ru">kpd.karpenko@mail.ru</a></p>
+                <div class="requisites">
+                    <p><strong>ИП Карпенко Полина Дмитриевна</strong></p>
+                    <p>ОГРНИП: 326253600071501</p>
+                    <p>ИНН: 253501991059</p>
+                </div>
+            </div>
+
+            <div class="contact-block">
+                <h3>Обратная связь</h3>
+                <form onsubmit="submitFeedback(event)">
+                    <div class="form-group">
+                        <label>Имя</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Телефон</label>
+                        <input type="tel" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Сообщение</label>
+                        <textarea></textarea>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" required id="policy1">
+                        <label for="policy1">Согласен с <a href="#">политикой конфиденциальности</a></label>
+                    </div>
+                    <button type="submit" class="btn btn-filled" style="width:100%">Отправить</button>
+                </form>
+            </div>
+
+            <div class="contact-block" style="padding:0; overflow:hidden;">
+                <img class="map-img" src="https://image.qwenlm.ai/public_source/4e14336b-8131-4f75-9221-51b4b76d4a1d/15b009a54-cb78-4568-a0af-baf50f3f04f2.png" alt="Кадастровая карта">
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <!-- <div class="footer-contacts">
+            <div>ИП Карпенко Полина Дмитриевна</div>
+            <div>ОГРНИП: 326253600071501 · ИНН: 253501991059</div>
+            <div>Телефон: <a href="tel:+79146636131">+7 (914) 663-61-31</a> · E-mail: <a href="mailto:kpd.karpenko@mail.ru">kpd.karpenko@mail.ru</a></div>
+        </div> -->
+        <div>Разработка сайта: <a href="https://shutovamarina-web.ru/" target="_blank" rel="noopener">shutovamarina-web.ru</a></div>
+    </footer>
+
+    <!-- MODAL -->
+    <div class="modal-overlay" id="modal">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal()">✕</button>
+            <h2>Коммерческое предложение</h2>
+            <form onsubmit="submitModal(event)">
+                <div class="form-group">
+                    <label>Имя</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>Телефон</label>
+                    <input type="tel" required>
+                </div>
+                <div class="form-group">
+                    <label>E-mail</label>
+                    <input type="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Текст запроса</label>
+                    <textarea rows="4"></textarea>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" required id="policy2">
+                    <label for="policy2">Согласен с <a href="#">политикой конфиденциальности</a></label>
+                </div>
+                <button type="submit" class="btn btn-filled" style="width:100%">Запросить коммерческое предложение</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <img id="lightboxImg" src="" alt="">
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
