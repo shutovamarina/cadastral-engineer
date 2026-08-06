@@ -17,6 +17,13 @@
     --glass-border: rgba(163, 177, 138, 0.25);
     --glass-glow: rgba(163, 177, 138, 0.2);
     /* Цвет свечения чуть ярче границы */
+    /* тёмное плотное стекло вместо светлого прозрачного */
+    --glass-bg2: linear-gradient(160deg, rgba(21, 28, 22, 0.82), rgba(21, 28, 22, 0.66));
+    --glass-border2: rgba(190, 205, 165, 0.35);
+    --glass-glow2: rgba(163, 177, 138, 0.25);
+    --text-main: #f5f7f3;
+    --text-muted: rgba(245, 247, 243, 0.9);
+    /* было 0.75–0.85 — слишком бледно */
 }
 
 html {
@@ -30,15 +37,15 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     /* Путь к вашему изображению */
-    background-image: url('img/bg1.jpg');
+    /*   background-image: url('img/bg1.jpg'); */
     /* Фиксация фона */
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     /* Центрирование изображения */
-    background-position: center center;
+    /* background-position: center center; */
     /* Запрет на повторение */
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     /* Масштабирование под размер экрана (покрывает всю область) */
-    background-size: cover;
+    /*  background-size: cover; */
     /* На всякий случай убираем отступы по умолчанию */
     margin: 0;
     min-height: 100vh;
@@ -179,6 +186,14 @@ nav a:hover::after {
 /* HERO */
 
 .hero {
+    background-image: url('img/bg/1.jpg');
+    /* Центрирование изображения */
+    background-position: center center;
+    /* Запрет на повторение */
+    background-repeat: no-repeat;
+    /* Масштабирование под размер экрана (покрывает всю область) */
+    background-size: cover;
+    /* На всякий случай убираем отступы по умолчанию */
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -200,8 +215,8 @@ nav a:hover::after {
     text-align: center;
     max-width: 780px;
     background: var(--glass-bg);
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border: 3px solid var(--glass-glow);
     border-radius: var(--radius);
     padding: 70px 40px;
@@ -251,7 +266,7 @@ nav a:hover::after {
 }
 
 .btn-filled {
-    background: var(--c3);
+    background: var(--c1);
     border-color: var(--c3);
 }
 
@@ -266,7 +281,7 @@ nav a:hover::after {
 
 section {
     padding: 90px 40px;
-    max-width: 1280px;
+    /* max-width: 1280px; */
     margin: 0 auto;
 }
 
@@ -287,10 +302,20 @@ section {
 
 /* ABOUT */
 
+.about {
+    background-image: url('img/bg/2.jpeg');
+    /* Центрирование изображения */
+    background-position: center center;
+    /* Запрет на повторение */
+    background-repeat: no-repeat;
+    /* Масштабирование под размер экрана (покрывает всю область) */
+    background-size: cover;
+}
+
 .about-block {
     background: var(--glass-bg);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border: 1px solid var(--glass-border);
     border-radius: var(--radius);
     padding: 60px;
@@ -305,6 +330,16 @@ section {
 
 
 /* SERVICES */
+
+.services {
+    background-image: url('img/bg/3.jpg');
+    /* Центрирование изображения */
+    background-position: center center;
+    /* Запрет на повторение */
+    background-repeat: no-repeat;
+    /* Масштабирование под размер экрана (покрывает всю область) */
+    background-size: cover;
+}
 
 .services-grid {
     display: grid;
@@ -330,7 +365,8 @@ section {
 }
 
 .service-img {
-    height: 220px;
+    width: 350px;
+    height: 250px;
     overflow: hidden;
     position: relative;
 }
@@ -338,7 +374,7 @@ section {
 .service-img img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
     transition: transform 0.6s;
 }
 
@@ -366,7 +402,16 @@ section {
 
 /* PRICES */
 
-.price-row {
+.prices {
+    background-image: url('img/bg/4.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* .price-row {
     background: var(--glass-bg);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -443,17 +488,213 @@ section {
 .price-cta {
     text-align: center;
     margin-top: 40px;
+} */
+
+
+/* .price-category {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius);
+    margin-bottom: 14px;
+    overflow: hidden;
+    transition: border-color 0.3s;
+} */
+
+.price-category {
+    background: var(--glass-bg2);
+    /* brightness приглушает светлый бетон ЗА блоком */
+    backdrop-filter: blur(22px) brightness(0.85) saturate(1.1);
+    -webkit-backdrop-filter: blur(22px) brightness(0.85) saturate(1.1);
+    border: 1px solid var(--glass-border2);
+    border-radius: var(--radius);
+    margin-bottom: 14px;
+    overflow: hidden;
+    transition: border-color .3s, box-shadow .3s;
+    /* тень отделяет блок и от светлых, и от тёмных зон фото */
+    box-shadow: 0 18px 45px rgba(0, 0, 0, .35), inset 0 1px 0 rgba(255, 255, 255, .07);
+}
+
+.price-category:hover {
+    border-color: var(--c4);
+}
+
+.price-category:hover {
+    border-color: var(--c4);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, .4), 0 0 0 1px var(--glass-glow2);
+}
+
+.price-header {
+    padding: 22px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    gap: 20px;
+}
+
+.price-header h3 {
+    font-size: 17px;
+    font-weight: 500;
+    flex: 1;
+    color: var(--text-main);
 }
 
 
-/* STAGES */
+/* .price-header h3 {
+    font-size: 17px;
+  color: var(--text-main);
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .35); /* опционально */
 
+
+}
+*/ .price-tag {
+    color: var(--c4);
+    font-size: 15px;
+    white-space: nowrap;
+    font-weight: 500;
+}
+.price-toggle {
+    width: 28px;
+    height: 28px;
+    border: 1px solid var(--c4);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+    flex-shrink: 0;
+    font-size: 18px;
+    color: var(--c4);
+}
+.price-category.open .price-toggle {
+    transform: rotate(45deg);
+}
+.price-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    padding: 0 28px;
+}
+.price-category.open .price-body {
+    max-height: 2000px;
+    padding: 0 28px 24px;
+}
+.price-body p {
+    font-size: 14px;
+    color: rgba(245, 247, 243, 0.85);
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+.price-body ul {
+    margin: 10px 0 14px 20px;
+    font-size: 14px;
+    color: rgba(245, 247, 243, 0.85);
+    line-height: 1.7;
+}
+.price-body ul li {
+    margin-bottom: 6px;
+    padding-left: 4px;
+}
+.price-body ul li::marker {
+    color: var(--c4);
+}
+
+/* SUBITEMS */
+.price-subitem {
+    background: rgba(43, 58, 46, 0.35);
+    border: 1px solid rgba(163, 177, 138, 0.15);
+    border-radius: var(--radius);
+    padding: 16px 18px;
+    margin-bottom: 12px;
+}
+.price-subitem:last-child {
+    margin-bottom: 0;
+}
+.price-subheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+.price-subtitle {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--white);
+    flex: 1;
+}
+.price-subitem {
+    background: rgba(245, 247, 243, 0.06);
+    border: 1px solid rgba(190, 205, 165, 0.22);
+}
+.price-subitem p {
+    color: rgba(245, 247, 243, 0.85);
+}
+
+/* .price-subitem p {
+    font-size: 13px;
+    color: rgba(245, 247, 243, 0.75);
+    line-height: 1.6;
+    margin-bottom: 0;
+} */
+.price-cta {
+    text-align: center;
+    margin-top: 40px;
+}
+@media (max-width: 768px) {
+    .price-header {
+        padding: 18px 20px;
+        flex-wrap: wrap;
+    }
+    
+    .price-header h3 {
+        font-size: 15px;
+    }
+    
+    .price-tag {
+        font-size: 13px;
+    }
+    
+    .price-body {
+        padding: 0 20px;
+    }
+    
+    .price-category.open .price-body {
+        padding: 0 20px 20px;
+    }
+    
+    .price-subitem {
+        padding: 14px;
+    }
+    
+    .price-subheader {
+        flex-direction: column;
+        gap: 6px;
+    }
+}
+
+/* STAGES */
+.stages {
+    background-image: url('img/bg/5.jpg');
+    /* Центрирование изображения */
+    
+    background-position: center center;
+    /* Запрет на повторение */
+    
+    background-repeat: no-repeat;
+    /* Масштабирование под размер экрана (покрывает всю область) */
+    
+    background-size: cover;
+}
 .stages-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 22px;
 }
-
 .stage-card {
     background: var(--glass-bg);
     backdrop-filter: blur(20px);
@@ -464,12 +705,10 @@ section {
     position: relative;
     transition: all 0.3s;
 }
-
 .stage-card:hover {
     border-color: var(--c4);
     transform: translateY(-4px);
 }
-
 .stage-num {
     font-size: 48px;
     color: var(--c4);
@@ -478,43 +717,47 @@ section {
     line-height: 1;
     margin-bottom: 14px;
 }
-
 .stage-card h3 {
     font-size: 18px;
     margin-bottom: 10px;
     font-weight: 500;
 }
-
 .stage-card p {
     font-size: 14px;
     color: rgba(245, 247, 243, 0.8);
     line-height: 1.6;
 }
 
-
 /* EDUCATION CAROUSEL */
-
+.education {
+    background-image: url('img/bg/7.jpg');
+    /* Центрирование изображения */
+    
+    background-position: center center;
+    /* Запрет на повторение */
+    
+    background-repeat: no-repeat;
+    /* Масштабирование под размер экрана (покрывает всю область) */
+    
+    background-size: cover;
+}
 .carousel-section {
     position: relative;
     max-width: 100%;
     overflow: hidden;
 }
-
 .carousel-container {
     position: relative;
     padding: 0 20px;
 }
-
 .carousel-viewport {
     overflow: hidden;
 }
-
 .carousel-track {
     display: flex;
     gap: 22px;
     transition: transform 0.5s ease;
 }
-
 .diploma-card {
     flex: 0 0 calc((100% - 44px) / 3);
     cursor: zoom-in;
@@ -525,15 +768,12 @@ section {
     justify-content: center;
     /*  padding: 10px; */
 }
-
 .diploma-card:hover {
     transform: scale(1.05);
 }
-
 .diploma-card.center {
     transform: scale(1.03);
 }
-
 .diploma-card img {
     width: 100%;
     max-height: 320px;
@@ -541,17 +781,13 @@ section {
     display: block;
 }
 
-
 /* Вертикальные дипломы */
-
 .diploma-vertical {
     min-height: 380px;
 }
-
 .diploma-vertical img {
     max-height: 360px;
 }
-
 .carousel-btn {
     position: absolute;
     top: 50%;
@@ -572,57 +808,70 @@ section {
     align-items: center;
     justify-content: center;
 }
-
 .carousel-btn:hover {
     background: var(--c4);
     color: var(--c1);
 }
-
 .carousel-btn.prev {
     left: 10px;
 }
-
 .carousel-btn.next {
     right: 10px;
 }
-
 @media (max-width: 1024px) {
     .diploma-card {
         flex: 0 0 calc((100% - 22px) / 2);
     }
+    
     .diploma-card img {
         max-height: 280px;
     }
+    
     .diploma-vertical {
         min-height: 320px;
     }
+    
     .diploma-vertical img {
         max-height: 300px;
     }
 }
-
 @media (max-width: 768px) {
     .carousel-container {
         padding: 0 10px;
     }
+    
     .diploma-card {
         flex: 0 0 100%;
         padding: 5px;
     }
+    
     .diploma-card img {
         max-height: 300px;
     }
+    
     .diploma-vertical {
         min-height: 340px;
     }
+    
     .diploma-vertical img {
         max-height: 320px;
     }
 }
 
-
 /* FAQ */
-
+.faq {
+    background-image: url('img/bg/6.jpg');
+    /* Центрирование изображения */
+    
+    background-position: center center;
+    /* Запрет на повторение */
+    
+    background-repeat: no-repeat;
+    /* Масштабирование под размер экрана (покрывает всю область) */
+    
+    background-size: cover;
+    background-attachment: fixed;
+}
 .faq-item {
     background: var(--glass-bg);
     backdrop-filter: blur(20px);
@@ -632,7 +881,6 @@ section {
     margin-bottom: 14px;
     overflow: hidden;
 }
-
 .faq-q {
     padding: 22px 28px;
     display: flex;
@@ -642,13 +890,11 @@ section {
     font-size: 16px;
     transition: background 0.3s;
 }
-
 .faq-q:hover {
-    background: var(--c4);
+    background: var(--c5);
     border-color: var(--c4);
     color: var(--c1);
 }
-
 .faq-arrow {
     width: 28px;
     height: 28px;
@@ -661,50 +907,51 @@ section {
     color: var(--c4);
     flex-shrink: 0;
     font-size: 15px;
-    /*   display: inline-block;
-    /* Превращает элемент в строчно-блочный, чтобы работал поворот */
-    /*  transform: rotate(180deg); */
-    /* Разворачивает символ ровно на 180 градусов */
-    */
 }
-
 .faq-arrow:hover {
     color: var(--c1);
     border: 1px solid var(--c1);
+}
+.faq-arrow:active {
     transform: rotate(180deg);
 }
-
 .faq-item.open .faq-arrow {
     transform: rotate(180deg);
 }
-
 .faq-a {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease;
     padding: 0 28px;
 }
-
 .faq-item.open .faq-a {
     max-height: 300px;
     padding: 0 28px 22px;
 }
-
 .faq-a p {
     font-size: 14px;
     color: rgba(245, 247, 243, 0.85);
     line-height: 1.7;
 }
 
-
 /* CONTACTS */
-
+.contacts {
+    background-image: url('img/bg/8.jpg');
+    /* Центрирование изображения */
+    
+    background-position: center center;
+    /* Запрет на повторение */
+    
+    background-repeat: no-repeat;
+    /* Масштабирование под размер экрана (покрывает всю область) */
+    
+    background-size: cover;
+}
 .contacts-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1.2fr;
     gap: 22px;
 }
-
 .contact-block {
     background: var(--glass-bg);
     backdrop-filter: blur(20px);
@@ -713,34 +960,28 @@ section {
     border-radius: var(--radius);
     padding: 32px;
 }
-
 .contact-block h3 {
     font-size: 20px;
     margin-bottom: 22px;
     font-weight: 500;
     color: var(--c4);
 }
-
 .contact-info p {
     margin-bottom: 12px;
     font-size: 15px;
     line-height: 1.6;
 }
-
 .contact-info .label {
     color: var(--c4);
     font-size: 13px;
     margin-bottom: 4px;
 }
-
 .contact-info a {
     transition: color 0.3s;
 }
-
 .contact-info a:hover {
     color: var(--c4);
 }
-
 .requisites {
     margin-top: 22px;
     padding-top: 22px;
@@ -748,18 +989,14 @@ section {
     font-size: 13px;
     color: rgba(245, 247, 243, 0.75);
 }
-
 .requisites p {
     margin-bottom: 6px;
 }
 
-
 /* FORM */
-
 .form-group {
     margin-bottom: 14px;
 }
-
 .form-group label {
     display: block;
     font-size: 12px;
@@ -768,7 +1005,6 @@ section {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-
 .form-group input,
 .form-group textarea {
     width: 95%;
@@ -781,18 +1017,15 @@ section {
     font-size: 14px;
     transition: border-color 0.3s;
 }
-
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
     border-color: var(--c4);
 }
-
 .form-group textarea {
     resize: vertical;
     min-height: 80px;
 }
-
 .checkbox-group {
     display: flex;
     gap: 10px;
@@ -801,17 +1034,14 @@ section {
     color: rgba(245, 247, 243, 0.7);
     margin-bottom: 16px;
 }
-
 .checkbox-group input {
     margin-top: 3px;
     accent-color: var(--c4);
 }
-
 .checkbox-group a {
     color: var(--c4);
     text-decoration: underline;
 }
-
 .map-img {
     width: 100%;
     height: 100%;
@@ -820,9 +1050,7 @@ section {
     border-radius: var(--radius);
 }
 
-
 /* FOOTER */
-
 footer {
     background: var(--glass-bg);
     backdrop-filter: blur(20px);
@@ -833,24 +1061,19 @@ footer {
     font-size: 13px;
     color: rgba(245, 247, 243, 0.7);
 }
-
 footer a {
     color: var(--c4);
     transition: color 0.3s;
 }
-
 footer a:hover {
     color: var(--white);
 }
-
 .footer-contacts {
     margin: 16px 0;
     line-height: 1.8;
 }
 
-
 /* MODAL */
-
 .modal-overlay {
     position: fixed;
     inset: 0;
@@ -863,11 +1086,9 @@ footer a:hover {
     justify-content: center;
     padding: 20px;
 }
-
 .modal-overlay.active {
     display: flex;
 }
-
 .modal {
     background: var(--c1);
     border: 1px solid var(--c4);
@@ -879,7 +1100,6 @@ footer a:hover {
     max-height: 90vh;
     overflow-y: auto;
 }
-
 .modal-close {
     position: absolute;
     top: 16px;
@@ -894,21 +1114,17 @@ footer a:hover {
     cursor: pointer;
     transition: all 0.3s;
 }
-
 .modal-close:hover {
     background: var(--c4);
     color: var(--c1);
 }
-
 .modal h2 {
     font-size: 24px;
     margin-bottom: 24px;
     font-weight: 400;
 }
 
-
 /* DIPLOMA LIGHTBOX */
-
 .lightbox {
     position: fixed;
     inset: 0;
@@ -920,11 +1136,9 @@ footer a:hover {
     padding: 40px;
     cursor: zoom-out;
 }
-
 .lightbox.active {
     display: flex;
 }
-
 .lightbox img {
     max-width: 90%;
     max-height: 90vh;
@@ -932,35 +1146,38 @@ footer a:hover {
     border: 1px solid var(--c4);
 }
 
-
 /* RESPONSIVE */
-
 @media (max-width: 1024px) {
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+    
     .stages-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+    
     .contacts-grid {
         grid-template-columns: 1fr;
     }
+    
     nav ul {
         gap: 14px;
         font-size: 13px;
     }
+    
     .diploma-card {
         flex: 0 0 calc((100% - 22px) / 2);
     }
 }
-
 @media (max-width: 768px) {
     header {
         padding: 12px 20px;
     }
+    
     .header-center {
         display: none;
     }
+    
     nav {
         position: fixed;
         top: 60px;
@@ -973,60 +1190,77 @@ footer a:hover {
         padding: 30px;
         transition: right 0.3s;
     }
+    
     nav.open {
         right: 0;
     }
+    
     nav ul {
         flex-direction: column;
         gap: 18px;
         font-size: 16px;
     }
+    
     .burger {
         display: flex;
     }
+    
     .hero h1 {
         font-size: 36px;
     }
+    
     .hero-inner {
         padding: 50px 24px;
         box-shadow: 0 0 12px var(--glass-glow);
     }
+    
     section {
         padding: 60px 20px;
     }
+    
     .section-title {
         font-size: 30px;
     }
+    
     .about-block {
         padding: 30px 24px;
     }
+    
     .services-grid {
         grid-template-columns: 1fr;
     }
+    
     .stages-grid {
         grid-template-columns: 1fr;
     }
     /* Mobile carousel fix */
+    
     .carousel-container {
         padding: 0 50px;
     }
+    
     .diploma-card {
         flex: 0 0 100%;
     }
+    
     .diploma-card img {
         height: 280px;
     }
+    
     .carousel-btn {
         width: 40px;
         height: 40px;
         font-size: 18px;
     }
+    
     .carousel-btn.prev {
         left: 5px;
     }
+    
     .carousel-btn.next {
         right: 5px;
     }
+    
     .map-img {
         min-height: 260px;
     }

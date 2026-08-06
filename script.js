@@ -13,7 +13,7 @@ function togglePrice(el) {
 }
 
 function scrollToPrice(idx) {
-    const rows = document.querySelectorAll('.price-row');
+    const rows = document.querySelectorAll('.price-category');
     if (rows[idx]) {
         rows[idx].classList.add('open');
         rows[idx].scrollIntoView({
