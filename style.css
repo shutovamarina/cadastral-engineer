@@ -68,9 +68,17 @@ img {
     display: block;
 }
 
-@font-face {
+
+/* @font-face {
     font-family: 'Nuqun';
     src: url('/font/Nuqun-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+} */
+
+@font-face {
+    font-family: 'Nuqun';
+    src: url('font/Nuqun-Regular.woff2') format('woff2'), url('font/Nuqun-Regular.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
 }
