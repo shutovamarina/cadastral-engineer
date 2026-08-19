@@ -31,9 +31,6 @@
     --glass-bg3: linear-gradient(160deg, rgba(21, 28, 22, 0.82), rgba(21, 28, 22, 0.66));
     --glass-border2: rgba(190, 205, 165, 0.35);
     --glass-glow2: rgba(163, 177, 138, 0.25);
-    /* --text-main: #f5f7f3; */
-    /* --text-muted: rgba(245, 247, 243, 0.9); */
-    /* было 0.75–0.85 — слишком бледно */
 }
 
 html {
