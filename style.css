@@ -70,7 +70,7 @@ img {
 
 @font-face {
     font-family: 'Nuqun';
-    src: url('../font/Nuqun-Regular.otf') format('opentype');
+    src: url('/font/Nuqun-Regular.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
 }
@@ -263,7 +263,7 @@ nav a:hover::after {
 }
 
 .hero h1 {
-    font-family: 'Nuqun', serif;
+    font-family: 'Nuqun', "Manrope", serif;
     font-size: 50px;
     font-weight: 400;
     letter-spacing: 5px;
