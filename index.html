@@ -5,33 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кадастровый инженер — Карпенко Полина Дмитриевна</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
     <header>
-        <div class="logo">
-            <div class="logo-icon">
-                <img src="img/logo1 (1).png" alt="logo">
-            </div>
-            <span>Кадастровый<br>инженер</span>
-        </div>
-        <div class="header-center">
-            <div><a href="tel:+79146636131">+7 (914) 663-61-31</a></div>
-            <div><a href="mailto:kpd.karpenko@mail.ru">kpd.karpenko@mail.ru</a></div>
-        </div>
+
+
         <nav id="nav">
             <ul>
-                <li><a href="#about" onclick="closeNav()">О нас</a></li>
+                <li><a href="#about" onclick="closeNav()">Обо мне</a></li>
                 <li><a href="#services" onclick="closeNav()">Услуги</a></li>
                 <li><a href="#prices" onclick="closeNav()">Цены</a></li>
                 <li><a href="#stages" onclick="closeNav()">Этапы работы</a></li>
-                <li><a href="#education" onclick="closeNav()">Образование</a></li>
                 <li><a href="#faq" onclick="closeNav()">Вопросы и ответы</a></li>
                 <li><a href="#contacts" onclick="closeNav()">Контакты</a></li>
             </ul>
         </nav>
+        <div class="header-center">
+            <div class="header-phones">
+                <div class="header-icons">
+                    <a href="tel:+79146636131" title="Позвонить">
+                        <img src="icons/icons8-телефонная-трубка-50.png" alt="телефон">
+                    </a>
+                    <a href="https://wa.me/79146636131" target="_blank" title="WhatsApp">
+                        <img src="icons/icons8-whatsapp-50.png" alt="WhatsApp">
+                    </a>
+                    <a href="https://t.me/+79146636131" target="_blank" title="Telegram">
+                        <img src="icons/icons8-телеграм-50.png" alt="Telegram">
+                    </a>
+                </div>
+                <a href="tel:+79146636131">+7 (914) 663-61-31</a>
+            </div>
+            <div class="header-email">
+                <img src="icons/icons8-почта-50.png" alt="почта">
+                <a href="mailto:kpd.karpenko@mail.ru">kpd.karpenko@mail.ru</a>
+            </div>
+        </div>
         <div class="burger" onclick="toggleNav()">
             <span></span><span></span><span></span>
         </div>
@@ -40,31 +55,36 @@
     <!-- HERO -->
     <section class="hero" id="home">
         <div class="hero-inner">
-            <h1>Кадастровый инженер</h1>
-            <p>Точность границ. Надёжность документов. Профессиональный подход к каждому участку.</p>
+            <h1><span class="hero-first-letter">К</span>адастровый инженер в <span class="hero-first-letter">П</span>риморском крае и по всей <span class="hero-first-letter">Р</span>оссии</h1>
+            <p>Точность границ. Надёжность документов. Профессиональный подход.</p>
             <div class="hero-buttons">
-                <a href="#contacts" class="btn btn-filled">Связаться</a>
-                <a href="#about" class="btn">Подробнее</a>
+                <a href="#contacts" class="btn btn-filled">Обсудить проект</a>
+
             </div>
         </div>
     </section>
 
     <!-- ABOUT -->
-    <section class="about" id="about">
-        <h2 class="section-title">О нас</h2>
-        <p class="section-subtitle">Профессионализм, проверенный временем</p>
-        <div class="about-block">
-            <p>ИП Карпенко Полина Дмитриевна — сертифицированный кадастровый инженер, осуществляющий деятельность в сфере землеустройства и кадастровых работ на территории Приморского края.</p>
-            <p>Мы — молодая, динамично развивающаяся компания, которая строит свою работу на принципах профессионализма, внимательности к деталям и строгого соблюдения действующего законодательства. За плечами нашего специалиста — профильное образование,
-                успешная аттестация и практическая подготовка, необходимые для выполнения полного спектра кадастровых работ.</p>
-            <p>Наша цель — стать надёжным партнёром для каждого клиента: от частного лица, которому нужно оформить дачный участок, до организации, реализующей крупный инфраструктурный проект. Мы открыты к диалогу, работаем прозрачно и берём на себя ответственность
-                за результат на каждом этапе — от первичной консультации до получения готовой выписки из ЕГРН.</p>
-            <p>Мы дорожим каждым обращением и выстраиваем долгосрочные, доверительные отношения с заказчиками, доказывая свою компетентность качеством работы, а не громкими обещаниями.</p>
+    <section id="about" class="about">
+        <h2 class="section-title section-title-center">Обо мне</h2>
+        <div class="about-section">
+            <div class="about-img"><img src="img/1.jpg" alt="обо мне"></div>
+
+            <div class="about-block">
+                <p class="about-line">Меня зовут Полина Карпенко, я — кадастровый инженер, член саморегулируемой организации кадастровых инженеров.</p>
+                <p>Работаю в сфере землеустройства и кадастровых работ как индивидуальный предприниматель — на территории Приморского края и по всей Российской Федерации.</p>
+                <p>Это значит, что вашим вопросом от начала и до конца занимаюсь лично я — без передачи «по цепочке» между сотрудниками. Такой подход позволяет мне глубоко погружаться в каждую задачу и быть в курсе всех деталей вашего проекта на каждом этапе.</p>
+                <h4>Моя цель</h4>
+                <p>
+                    Стать вашим надёжным помощником в вопросах недвижимости и земли. Будь то частное лицо, которому нужно оформить дачный участок или дом, или организация, реализующая крупный проект — я готова предложить профессиональное решение.
+                </p>
+            </div>
         </div>
+
     </section>
 
     <!-- SERVICES -->
-    <section id="services" class="services">
+    <!-- <section id="services" class="services">
         <h2 class="section-title">Услуги</h2>
         <p class="section-subtitle">Полный спектр кадастровых работ</p>
         <div class="services-grid">
@@ -153,164 +173,197 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- PRICES -->
-    <!--  <section id="prices" class="prices">
-        <h2 class="section-title">Цены на услуги</h2>
-        <p class="section-subtitle">Прозрачное ценообразование</p>
-
-        <div class="price-row">
-            <div class="price-header" onclick="togglePrice(this)">
-                <h3>Межевание земельного участка</h3>
-                <span class="price-tag">от 8 000 руб.</span>
-                <span class="price-toggle">+</span>
-            </div>
-            <div class="price-body">
-                <p>Определение и уточнение границ земельного участка с подготовкой межевого плана. Включает выезд на местность, геодезические измерения, согласование границ с соседями и формирование документов для Росреестра. Срок выполнения — от 10 рабочих
-                    дней.
-                </p>
-            </div>
-        </div>
-
-        <div class="price-row">
-            <div class="price-header" onclick="togglePrice(this)">
-                <h3>Подготовка технического плана здания</h3>
-                <span class="price-tag">от 12 000 руб.</span>
-                <span class="price-toggle">+</span>
-            </div>
-            <div class="price-body">
-                <p>Технический план жилого дома, нежилого здания или сооружения для постановки на кадастровый учёт и регистрации права собственности. Включает обмеры, подготовку чертежей и электронного документа с усиленной подписью.</p>
-            </div>
-        </div>
-
-        <div class="price-row">
-            <div class="price-header" onclick="togglePrice(this)">
-                <h3>Аэрофотосъёмка территории</h3>
-                <span class="price-tag">от 15 000 руб.</span>
-                <span class="price-toggle">+</span>
-            </div>
-            <div class="price-body">
-                <p>Выполнение аэрофотосъёмки с применением беспилотных летательных аппаратов. Создание ортофотопланов, цифровых моделей рельефа и карт местности. Применяется для крупных территорий и сложных объектов.</p>
-            </div>
-        </div>
-
-        <div class="price-row">
-            <div class="price-header" onclick="togglePrice(this)">
-                <h3>Топографическая съёмка</h3>
-                <span class="price-tag">от 10 000 руб.</span>
-                <span class="price-toggle">+</span>
-            </div>
-            <div class="price-body">
-                <p>Съёмка ситуации и рельефа местности для проектирования, получения разрешения на строительство или подключения коммуникаций. Масштаб от 1:500 до 1:5000. Результат — топографический план в электронном и печатном виде.</p>
-            </div>
-        </div>
-
-        <div class="price-row">
-            <div class="price-header" onclick="togglePrice(this)">
-                <h3>Вынос границ участка в натуру</h3>
-                <span class="price-tag">от 6 000 руб.</span>
-                <span class="price-toggle">+</span>
-            </div>
-            <div class="price-body">
-                <p>Определение и закрепление на местности границ земельного участка в соответствии с данными ЕГРН. Установка межевых знаков, составление акта выноса. Необходимо при покупке участка, строительстве или разрешении споров.</p>
-            </div>
-        </div>
-
-        <div class="price-row">
-            <div class="price-header" onclick="togglePrice(this)">
-                <h3>Землеустроительная документация</h3>
-                <span class="price-tag">от 25 000 руб.</span>
-                <span class="price-toggle">+</span>
-            </div>
-            <div class="price-body">
-                <p>Разработка проектов межевания территорий, схем расположения земельных участков, проектов перераспределения земель. Подготовка документации для администраций и государственных заказчиков.</p>
-            </div>
-        </div>
-
-        <div class="price-row">
-            <div class="price-header" onclick="togglePrice(this)">
-                <h3>Регистрация в Росреестре</h3>
-                <span class="price-tag">от 5 000 руб.</span>
-                <span class="price-toggle">+</span>
-            </div>
-            <div class="price-body">
-                <p>Сопровождение процедуры постановки объекта недвижимости на кадастровый учёт и регистрации права собственности. Подготовка полного пакета документов, подача через МФЦ или в электронном виде, контроль статуса.</p>
-            </div>
-        </div>
-
-        <div class="price-row">
-            <div class="price-header" onclick="togglePrice(this)">
-                <h3>Раздел и объединение участков</h3>
-                <span class="price-tag">от 14 000 руб.</span>
-                <span class="price-toggle">+</span>
-            </div>
-            <div class="price-body">
-                <p>Подготовка межевого плана при разделе существующего участка на несколько частей или объединении смежных участков. Включает согласование, геодезические работы и регистрацию изменений в ЕГРН.</p>
-            </div>
-        </div>
-
-        <div class="price-cta">
-            <button class="btn btn-filled" onclick="openModal()">Запросить коммерческое предложение</button>
-        </div>
     </section> -->
 
+    <section id="services" class="services-accordion">
+        <h2 class="section-title">Услуги</h2>
+
+        <!-- Ряд 1 -->
+        <div class="services-row">
+            <div class="service-card active" onclick="openCard(this)">
+                <div class="card-vertical-title">Оформить дом или участок</div>
+                <div class="card-content">
+                    <h3>Оформить дом или участок</h3>
+                    <ul>
+                        <li>Технический план</li>
+                        <li>Межевой план</li>
+                        <li>Подача в Росреестр</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-card" onclick="openCard(this)">
+                <div class="card-vertical-title">Уточнить границы</div>
+                <div class="card-content">
+                    <h3>Уточнить границы</h3>
+                    <ul>
+                        <li>Обмеры</li>
+                        <li>Межевой план</li>
+                        <li>Согласование с соседями</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-card" onclick="openCard(this)">
+                <div class="card-vertical-title">Оспорить площадь у застройщика</div>
+                <div class="card-content">
+                    <h3>Оспорить площадь у застройщика</h3>
+                    <ul>
+                        <li>Независимый обмер</li>
+                        <li>Заключение специалиста</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-card" onclick="openCard(this)">
+                <div class="card-vertical-title">Решить спор с соседями</div>
+                <div class="card-content">
+                    <h3>Решить спор с соседями</h3>
+                    <ul>
+                        <li>Проведение обмеров</li>
+                        <li>Подготовка межевого плана</li>
+                        <li>Акт согласования</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- <div class="service-card" onclick="openCard(this)">
+                <div class="card-vertical-title">Карточка 5</div>
+                <div class="card-content">
+                    <h3>Карточка 5</h3>
+                    <p>Описание услуги будет добавлено позже.</p>
+                </div>
+            </div> -->
+
+            <!--  <div class="service-card" onclick="openCard(this)">
+                <div class="card-vertical-title">Карточка 6</div>
+                <div class="card-content">
+                    <h3>Карточка 6</h3>
+                    <p>Описание услуги будет добавлено позже.</p>
+                </div>
+            </div> -->
+        </div>
+
+        <!-- Ряд 2 -->
+        <div class="services-row">
+            <div class="service-card active" onclick="openCard(this)">
+                <div class="card-vertical-title">Изменить территориальную зону</div>
+                <div class="card-content">
+                    <h3>Изменить территориальную зону</h3>
+                    <ul>
+                        <li>Описание границ</li>
+                        <li>Ведомость координат</li>
+                        <li>Пакет документов для ЕГРН</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-card" onclick="openCard(this)">
+                <div class="card-vertical-title">Ввод объекта в эксплуатацию</div>
+                <div class="card-content">
+                    <h3>Оформить ввод объекта в эксплуатацию</h3>
+                    <ul>
+                        <li>Технический план для получения разрешения на ввод объекта в эксплуатацию</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-card" onclick="openCard(this)">
+                <div class="card-vertical-title">Снять объект с учёта после сноса</div>
+                <div class="card-content">
+                    <h3>Снять объект с учёта после сноса</h3>
+                    <ul>
+                        <li>Подготовка акта обследования</li>
+                        <li>Подача заявления в Росреестр</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-card" onclick="openCard(this)">
+                <div class="card-vertical-title">ЗОУИТ</div>
+                <div class="card-content">
+                    <h3>ЗОУИТ</h3>
+                    <ul>
+                        <li>Документы для внесения сведений о ЗОУИТ в ЕГРН</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- <div class="service-card" onclick="openCard(this)">
+                <div class="card-vertical-title">Карточка 10</div>
+                <div class="card-content">
+                    <h3>Карточка 10</h3>
+                    <p>Описание услуги будет добавлено позже.</p>
+                </div>
+            </div> -->
+
+            <!-- <div class="service-card" onclick="openCard(this)">
+                <div class="card-vertical-title">Карточка 11</div>
+                <div class="card-content">
+                    <h3>Карточка 11</h3>
+                    <p>Описание услуги будет добавлено позже.</p>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
     <section id="prices" class="prices">
-        <h2 class="section-title">Цены на услуги</h2>
-        <p class="section-subtitle">Прозрачное ценообразование</p>
+        <h2 class="section-title section-title-right">Стоимость услуг</h2>
+        <!-- <p class="section-subtitle">Прозрачное ценообразование</p> -->
 
         <!-- 1. Межевой план -->
         <div class="price-category">
             <div class="price-header" onclick="togglePrice(this)">
-                <h3>1. Межевой план</h3>
-                <span class="price-toggle">+</span>
+                <h3>Межевой план</h3>
+                <span class="price-tag">от 12 000 руб.</span>
+                <span class="price-toggle">&#10095;</span>
             </div>
             <div class="price-body">
                 <div class="price-subitem">
                     <div class="price-subheader">
-                        <span class="price-subtitle">1.1. Для уточнения границ и площади земельного участка (межевание)</span>
+                        <span class="price-subtitle">Для уточнения границ и площади земельного участка (межевание)</span>
                         <span class="price-tag">от 15 000 руб.</span>
                     </div>
                     <p>Исправление неточностей в описании местоположения и площади ранее учтенного участка, согласования границ с соседями.</p>
                 </div>
                 <div class="price-subitem">
                     <div class="price-subheader">
-                        <span class="price-subtitle">1.2. Для образования земельного участка</span>
+                        <span class="price-subtitle">Для образования земельного участка</span>
                         <span class="price-tag">от 12 000 руб.</span>
                     </div>
                     <p>Постановка на кадастровый учет вновь создаваемого участка из земель государственной или муниципальной собственности.</p>
                 </div>
                 <div class="price-subitem">
                     <div class="price-subheader">
-                        <span class="price-subtitle">1.3. Для раздела земельного участка</span>
+                        <span class="price-subtitle">Для раздела земельного участка</span>
                         <span class="price-tag">от 15 000 руб.</span>
                     </div>
                     <p>Раздел одного существующего участка на два и более самостоятельных участка.</p>
                 </div>
                 <div class="price-subitem">
                     <div class="price-subheader">
-                        <span class="price-subtitle">1.4. Для объединения земельных участков</span>
+                        <span class="price-subtitle">Для объединения земельных участков</span>
                         <span class="price-tag">от 12 000 руб.</span>
                     </div>
                     <p>Объединение двух и более смежных участков в один земельный участок с сохранением категории земель и вида разрешенного использования.</p>
                 </div>
                 <div class="price-subitem">
                     <div class="price-subheader">
-                        <span class="price-subtitle">1.5. Для перераспределения земельных участков</span>
+                        <span class="price-subtitle">Для перераспределения земельных участков</span>
                         <span class="price-tag">от 12 000 руб.</span>
                     </div>
                     <p>Изменение границ между несколькими смежными участками, в том числе с присоединением земель, находящихся в государственной или муниципальной собственности.</p>
                 </div>
                 <div class="price-subitem">
                     <div class="price-subheader">
-                        <span class="price-subtitle">1.6. Для исправления реестровой ошибки</span>
+                        <span class="price-subtitle">Для исправления реестровой ошибки</span>
                         <span class="price-tag">от 20 000 руб.</span>
                     </div>
                     <p>Исправление ошибок в сведениях ЕГРН (ранее — кадастровых ошибок).</p>
                 </div>
                 <div class="price-subitem">
                     <div class="price-subheader">
-                        <span class="price-subtitle">1.7. Для выдела доли в праве общей собственности</span>
+                        <span class="price-subtitle">Для выдела доли в праве общей собственности</span>
                         <span class="price-tag">от 18 000 руб.</span>
                     </div>
                     <p>Выдел в натуре и на кадастровом учете части участка, соответствующей доли одного из сособственников.</p>
@@ -321,69 +374,70 @@
         <!-- 2. Технический план -->
         <div class="price-category">
             <div class="price-header" onclick="togglePrice(this)">
-                <h3>2. Технический план</h3>
-                <span class="price-toggle">+</span>
+                <h3>Технический план</h3>
+                <span class="price-tag">от 10 000 руб.</span>
+                <span class="price-toggle">&#10095;</span>
             </div>
             <div class="price-body">
                 <div class="price-subitem">
                     <div class="price-subheader">
-                        <span class="price-subtitle">2.1. Для жилых зданий</span>
+                        <span class="price-subtitle">Для жилых зданий</span>
                         <span class="price-tag">от 15 000 руб.</span>
                     </div>
                     <p>Индивидуальные жилые дома (ИЖС), дачные и садовые дома, многоквартирные дома.</p>
                 </div>
                 <div class="price-subitem">
                     <div class="price-subheader">
-                        <span class="price-subtitle">2.2. Для нежилых зданий</span>
+                        <span class="price-subtitle">Для нежилых зданий</span>
                         <span class="price-tag">от 18 000 руб.</span>
                     </div>
                     <p>Офисные центры, магазины, склады, производственные цеха.</p>
                 </div>
                 <div class="price-subitem">
                     <div class="price-subheader">
-                        <span class="price-subtitle">2.3. Для жилых помещений</span>
+                        <span class="price-subtitle">Для жилых помещений</span>
                         <span class="price-tag">от 10 000 руб.</span>
                     </div>
                     <p>Квартиры, комнаты в общежитиях и коммунальных квартирах.</p>
                 </div>
                 <div class="price-subitem">
                     <div class="price-subheader">
-                        <span class="price-subtitle">2.4. Для нежилых помещений</span>
+                        <span class="price-subtitle">Для нежилых помещений</span>
                         <span class="price-tag">от 12 000 руб.</span>
                     </div>
                     <p>Офисы, магазины, встроенные гаражи, подвалы, цокольные этажи.</p>
                 </div>
                 <div class="price-subitem">
                     <div class="price-subheader">
-                        <span class="price-subtitle">2.5. Для части помещения</span>
+                        <span class="price-subtitle">Для части помещения</span>
                         <span class="price-tag">от 10 000 руб.</span>
                     </div>
                     <p>При заключении договора аренды.</p>
                 </div>
                 <div class="price-subitem">
                     <div class="price-subheader">
-                        <span class="price-subtitle">2.6. Для сооружений</span>
+                        <span class="price-subtitle">Для сооружений</span>
                         <span class="price-tag">от 20 000 руб.</span>
                     </div>
                     <p>Инженерные и транспортные объекты: мосты, путепроводы, тоннели, трубопроводы, резервуары, гидротехнические сооружения (плотины, дамбы), спортивные и культурные объекты.</p>
                 </div>
                 <div class="price-subitem">
                     <div class="price-subheader">
-                        <span class="price-subtitle">2.7. Для линейного объекта</span>
+                        <span class="price-subtitle">Для линейного объекта</span>
                         <span class="price-tag">от 25 000 руб.</span>
                     </div>
                     <p>Отдельная категория для дорог, трубопроводов, линий электропередачи и связи.</p>
                 </div>
                 <div class="price-subitem">
                     <div class="price-subheader">
-                        <span class="price-subtitle">2.8. Для объекта незавершенного строительства</span>
+                        <span class="price-subtitle">Для объекта незавершенного строительства</span>
                         <span class="price-tag">от 15 000 руб.</span>
                     </div>
                     <p>Объекты, строительство которых еще не закончено.</p>
                 </div>
                 <div class="price-subitem">
                     <div class="price-subheader">
-                        <span class="price-subtitle">2.9. Для машино-места</span>
+                        <span class="price-subtitle">Для машино-места</span>
                         <span class="price-tag">от 10 000 руб.</span>
                     </div>
                     <p>Постановка на учет парковочных мест в зданиях.</p>
@@ -394,9 +448,9 @@
         <!-- 3. Акт обследования -->
         <div class="price-category">
             <div class="price-header" onclick="togglePrice(this)">
-                <h3>3. Акт обследования</h3>
+                <h3>Акт обследования</h3>
                 <span class="price-tag">от 7 000 руб.</span>
-                <span class="price-toggle">+</span>
+                <span class="price-toggle">&#10095;</span>
             </div>
             <div class="price-body">
                 <div class="price-subitem">
@@ -417,26 +471,26 @@
         <!-- 4. Схема расположения ЗУ на КПТ -->
         <div class="price-category">
             <div class="price-header" onclick="togglePrice(this)">
-                <h3>4. Схема расположения земельного участка на КПТ</h3>
+                <h3>Схема расположения земельного участка на КПТ</h3>
                 <span class="price-tag">от 5 000 руб.</span>
-                <span class="price-toggle">+</span>
+                <span class="price-toggle">&#10095;</span>
             </div>
             <div class="price-body">
                 <div class="price-subitem">
                     <div class="price-subheader">
-                        <span class="price-subtitle">4.1. Для образования нового земельного участка</span>
+                        <span class="price-subtitle">Для образования нового земельного участка</span>
                     </div>
                     <p>При выделе участка из земель государственной и муниципальной собственности.</p>
                 </div>
                 <div class="price-subitem">
                     <div class="price-subheader">
-                        <span class="price-subtitle">4.2. Для перераспределения земельных участков</span>
+                        <span class="price-subtitle">Для перераспределения земельных участков</span>
                     </div>
                     <p>При изменении границ смежных участков или присоединении свободных земель.</p>
                 </div>
                 <div class="price-subitem">
                     <div class="price-subheader">
-                        <span class="price-subtitle">4.3. Для установления сервитута</span>
+                        <span class="price-subtitle">Для установления сервитута</span>
                     </div>
                     <p>Для определения границ части участка, в отношении которой устанавливается право ограниченного пользования.</p>
                 </div>
@@ -446,9 +500,9 @@
         <!-- 5. Заключение специалиста -->
         <div class="price-category">
             <div class="price-header" onclick="togglePrice(this)">
-                <h3>5. Заключение специалиста</h3>
+                <h3>Заключение специалиста</h3>
                 <span class="price-tag">от 18 000 руб.</span>
-                <span class="price-toggle">+</span>
+                <span class="price-toggle">&#10095;</span>
             </div>
 
             <div class="price-body">
@@ -476,9 +530,9 @@
         <!-- 6. Сопровождение кадастрового учёта -->
         <div class="price-category">
             <div class="price-header" onclick="togglePrice(this)">
-                <h3>6. Сопровождение кадастрового учёта и регистрации прав</h3>
+                <h3>Сопровождение кадастрового учёта и регистрации прав</h3>
                 <span class="price-tag">от 5 000 руб.</span>
-                <span class="price-toggle">+</span>
+                <span class="price-toggle">&#10095;</span>
             </div>
             <div class="price-body">
                 <div class="price-subitem">
@@ -497,9 +551,9 @@
         <!-- 7. XML-схемы -->
         <div class="price-category">
             <div class="price-header" onclick="togglePrice(this)">
-                <h3>7. XML-схемы</h3>
+                <h3>XML-схемы</h3>
                 <span class="price-tag">по запросу</span>
-                <span class="price-toggle">+</span>
+                <span class="price-toggle">&#10095;</span>
             </div>
             <div class="price-body">
                 <div class="price-subitem">
@@ -512,9 +566,9 @@
         <!-- 8. Обмерные работы -->
         <div class="price-category">
             <div class="price-header" onclick="togglePrice(this)">
-                <h3>8. Обмерные работы (для проектирования, реконструкции и кадастра)</h3>
+                <h3>Обмерные работы (для проектирования, реконструкции и кадастра)</h3>
                 <span class="price-tag">от 5 000 руб.</span>
-                <span class="price-toggle">+</span>
+                <span class="price-toggle">&#10095;</span>
             </div>
             <div class="price-body">
                 <div class="price-subitem">
@@ -534,9 +588,9 @@
         <!-- 9. ЗОУИТ -->
         <div class="price-category">
             <div class="price-header" onclick="togglePrice(this)">
-                <h3>9. ЗОУИТ</h3>
+                <h3>ЗОУИТ</h3>
                 <span class="price-tag">по запросу</span>
-                <span class="price-toggle">+</span>
+                <span class="price-toggle">&#10095;</span>
             </div>
             <div class="price-body">
                 <div class="price-subitem">
@@ -553,9 +607,9 @@
         <!-- 10. Границы населенных пунктов и МО -->
         <div class="price-category">
             <div class="price-header" onclick="togglePrice(this)">
-                <h3>10. Границы населенных пунктов и МО</h3>
+                <h3>Границы населенных пунктов и МО</h3>
                 <span class="price-tag">по запросу</span>
-                <span class="price-toggle">+</span>
+                <span class="price-toggle">&#10095;</span>
             </div>
             <div class="price-body">
                 <div class="price-subitem">
@@ -572,9 +626,9 @@
         <!-- 11. Территориальные зоны -->
         <div class="price-category">
             <div class="price-header" onclick="togglePrice(this)">
-                <h3>11. Территориальные зоны</h3>
+                <h3>Территориальные зоны</h3>
                 <span class="price-tag">по запросу</span>
-                <span class="price-toggle">+</span>
+                <span class="price-toggle">&#10095;</span>
             </div>
             <div class="price-body">
                 <div class="price-subitem">
@@ -591,9 +645,9 @@
         <!-- 12. Карта (план) объекта землеустройства -->
         <div class="price-category">
             <div class="price-header" onclick="togglePrice(this)">
-                <h3>12. Карта (план) объекта землеустройства</h3>
+                <h3>Карта (план) объекта землеустройства</h3>
                 <span class="price-tag">от 30 000 руб.</span>
-                <span class="price-toggle">+</span>
+                <span class="price-toggle">&#10095;</span>
             </div>
             <div class="price-body">
                 <div class="price-subitem">
@@ -614,101 +668,72 @@
         </div>
     </section>
     <!-- STAGES -->
-    <section id="stages" class="stages">
-        <h2 class="section-title">Этапы работы</h2>
-        <p class="section-subtitle">Как мы работаем с вашим проектом</p>
-        <div class="stages-grid">
-            <div class="stage-card">
-                <div class="stage-num">01</div>
-                <h3>Этап 1</h3>
-                <p></p>
+
+    <section id="stages" class="stages-section">
+        <h2 class="section-title section-title-center">Этапы нашей работы с клиентом</h2>
+        <!-- <p class="section-subtitle">Как мы работаем с вашим проектом</p> -->
+
+        <div class="timeline">
+            <div class="timeline-line"></div>
+
+            <!-- 01 -->
+            <div class="timeline-item">
+                <div class="branch left-branch"></div>
+                <div class="timeline-content left">
+                    <h3>01 | Консультация</h3>
+                    <p>Вы связываетесь со мной — я изучаю вашу ситуацию, анализирую документы и сведения ЕГРН, определяю состав работ и точную стоимость.</p>
+                </div>
+                <div class="timeline-marker"></div>
+                <div class="timeline-spacer right"></div>
             </div>
-            <div class="stage-card">
-                <div class="stage-num">02</div>
-                <h3>Этап 2</h3>
-                <p></p>
+
+            <!-- 02 -->
+            <div class="timeline-item">
+                <div class="timeline-spacer left"></div>
+                <div class="timeline-marker"></div>
+                <div class="branch right-branch"></div>
+                <div class="timeline-content right">
+                    <h3>02 | Договор</h3>
+                    <p>Согласовываем точный состав работ, сроки и фиксированную стоимость. Заключаем договор — простой и понятный, без скрытых условий.</p>
+                </div>
             </div>
-            <div class="stage-card">
-                <div class="stage-num">03</div>
-                <h3>Этап 3</h3>
-                <p></p>
+
+            <!-- 03 -->
+            <div class="timeline-item">
+                <div class="branch left-branch"></div>
+                <div class="timeline-content left">
+                    <h3>03 | Процесс</h3>
+                    <p>Выполняю полный комплекс работ. Вы в любое время можете уточнить статус — я на связи и отвечаю в кратчайшие сроки.</p>
+                </div>
+                <div class="timeline-marker"></div>
+                <div class="timeline-spacer right"></div>
             </div>
-            <div class="stage-card">
-                <div class="stage-num">04</div>
-                <h3>Этап 4</h3>
-                <p></p>
+
+            <!-- 04 -->
+            <div class="timeline-item">
+                <div class="timeline-spacer left"></div>
+                <div class="timeline-marker"></div>
+                <div class="branch right-branch"></div>
+                <div class="timeline-content right">
+                    <h3>04 | Передача результата</h3>
+                    <p>Предоставляю готовый результат в формате, который вам нужен. При необходимости — подаю документы в Росреестр и сопровождаю процесс до полного завершения.</p>
+                </div>
             </div>
-            <div class="stage-card">
-                <div class="stage-num">05</div>
-                <h3>Этап 5</h3>
-                <p></p>
-            </div>
-            <div class="stage-card">
-                <div class="stage-num">06</div>
-                <h3>Этап 6</h3>
-                <p></p>
+
+            <!-- 05 -->
+            <div class="timeline-item">
+                <div class="branch left-branch"></div>
+                <div class="timeline-content left">
+                    <h3>05 | Ответственность</h3>
+                    <p>Я отвечаю за результат. После сдачи работы вы всегда можете обратиться ко мне с вопросами по документам — я на связи.</p>
+                </div>
+                <div class="timeline-marker"></div>
+                <div class="timeline-spacer right"></div>
             </div>
         </div>
     </section>
-
-    <!-- FAQ -->
-    <section id="faq" class="faq">
-        <h2 class="section-title">Вопросы и ответы</h2>
-        <p class="section-subtitle">Часто задаваемые вопросы</p>
-
-        <div class="faq-item">
-            <div class="faq-q" onclick="toggleFaq(this)">
-                <span>Вопрос 1?</span>
-                <span class="faq-arrow">&#9947;</span>
-            </div>
-            <div class="faq-a">
-                <p>Ответ 1</p>
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-q" onclick="toggleFaq(this)">
-                <span>Вопрос 2?</span>
-                <span class="faq-arrow">&#9947;</span>
-            </div>
-            <div class="faq-a">
-                <p>Ответ 2</p>
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-q" onclick="toggleFaq(this)">
-                <span>Вопрос 3?</span>
-                <span class="faq-arrow">&#9947;</span>
-            </div>
-            <div class="faq-a">
-                <p>Ответ 3</p>
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-q" onclick="toggleFaq(this)">
-                <span>Вопрос 4?</span>
-                <span class="faq-arrow">&#9947;</span>
-            </div>
-            <div class="faq-a">
-                <p>Ответ 4</p>
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-q" onclick="toggleFaq(this)">
-                <span>Вопрос 5?</span>
-                <span class="faq-arrow">&#9947;</span>
-            </div>
-            <div class="faq-a">
-                <p>Ответ 5</p>
-            </div>
-        </div>
-    </section>
-
     <section id="education" class="education">
-        <h2 class="section-title">Образование</h2>
+        <h2 class="section-title section-title-right">Образование</h2>
         <p class="section-subtitle">Дипломы и сертификаты</p>
         <div class="carousel-section">
             <div class="carousel-container">
@@ -730,24 +755,91 @@
             </div>
         </div>
     </section>
+    <!-- FAQ -->
+    <section id="faq" class="faq">
+        <h2 class="section-title">Часто задаваемые вопросы</h2>
 
 
+        <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">
+                <span>Можно ли заказать только выездные обмеры без подготовки документов?</span>
+                <span class="faq-arrow">&#9947;</span>
+            </div>
+            <div class="faq-a">
+                <p>Да. Если вам нужны только замеры без подготовки документов, я могу провести обмеры и предоставить обмерный план с размерами. Это востребовано при планировке, ремонте или проверке площади квартиры у застройщика.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">
+                <span>Сколько времени занимает подготовка документов?</span>
+                <span class="faq-arrow">&#9947;</span>
+            </div>
+            <div class="faq-a">
+                <p>Сроки зависят от объёма и сложности работ. Обычно подготовка занимает от нескольких дней до нескольких недель. Точный срок я называю после анализа и фиксирую в договоре.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">
+                <span>Какие документы подтверждают квалификацию кадастрового инженера?</span>
+                <span class="faq-arrow">&#9947;</span>
+            </div>
+            <div class="faq-a">
+                <p>Проверить специалиста можно через бесплатный сервис «Реестр кадастровых инженеров» на официальном сайте Росреестра. Достаточно ввести фамилию, имя и отчество. Информация о внесении в реестр подтверждает, что специалист сдал квалификационный
+                    экзамен и является членом саморегулируемой организации (СРО) — это обязательные условия для законной кадастровой деятельности.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">
+                <span>Что, если объект уже стоит на учёте, но в документах ошибка?</span>
+                <span class="faq-arrow">&#9947;</span>
+            </div>
+            <div class="faq-a">
+                <p>Я проведу анализ сведений ЕГРН, подготовлю заключение специалиста и исправлю ошибку. В зависимости от ситуации это может быть техническая ошибка или реестровая — для каждой есть свой порядок исправления.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">
+                <span>Какую информацию нужно предоставить для начала работы?</span>
+                <span class="faq-arrow">&#9947;</span>
+            </div>
+            <div class="faq-a">
+                <p>Достаточно описать вашу задачу по телефону или в мессенджере. Для анализа я запрашиваю имеющиеся документы: выписки из ЕГРН, правоустанавливающие документы, кадастровые номера, адрес объекта или координаты.</p>
+            </div>
+        </div>
+    </section>
 
     <!-- CONTACTS -->
     <section id="contacts" class="contacts">
         <h2 class="section-title">Контакты</h2>
-        <p class="section-subtitle">Свяжитесь с нами удобным способом</p>
+        <!--  <p class="section-subtitle section-title-right">Свяжитесь с нами удобным способом</p> -->
         <div class="contacts-grid">
             <div class="contact-block contact-info">
-                <h3>Контакты</h3>
-                <div class="label">Телефон</div>
-                <p><a href="tel:+79146636131">+7 (914) 663-61-31</a></p>
-                <div class="label">E-mail</div>
-                <p><a href="mailto:kpd.karpenko@mail.ru">kpd.karpenko@mail.ru</a></p>
-                <div class="requisites">
-                    <p><strong>ИП Карпенко Полина Дмитриевна</strong></p>
-                    <p>ОГРНИП: 326253600071501</p>
-                    <p>ИНН: 253501991059</p>
+                <div class="business-card-section">
+                    <div class="business-card">
+                        <div class="bc-top">
+                            <h3 class="bc-name">ИП Карпенко Полина Дмитриевна</h3>
+                            <div class="bc-requisites">
+                                <p>ОГРНИП: 326253600071501</p>
+                                <p>ИНН: 253501991059</p>
+                            </div>
+                        </div>
+                        <div class="bc-divider"></div>
+                        <div class="bc-bottom">
+                            <div class="bc-contact">
+                                <img class="bc-icon" src="icons/icons8-телефонная-трубка-50.png" alt="телефон">
+
+                                <a href="tel:+79146636131">+7 (914) 663-61-31</a>
+                            </div>
+                            <div class="bc-contact">
+                                <span class="bc-icon">✉</span>
+                                <a href="mailto:kpd.karpenko@mail.ru">kpd.karpenko@mail.ru</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -776,9 +868,7 @@
                 </form>
             </div>
 
-            <div class="contact-block" style="padding:0; overflow:hidden;">
-                <img class="map-img" src="https://image.qwenlm.ai/public_source/4e14336b-8131-4f75-9221-51b4b76d4a1d/15b009a54-cb78-4568-a0af-baf50f3f04f2.png" alt="Кадастровая карта">
-            </div>
+
         </div>
     </section>
 

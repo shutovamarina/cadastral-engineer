@@ -6,6 +6,23 @@ function toggleNav() {
 function closeNav() {
     document.getElementById('nav').classList.remove('open');
 }
+//serves
+function openCard(card) {
+    // Находим родительский ряд
+    const row = card.parentElement;
+    const cards = row.querySelectorAll('.service-card');
+
+    // Если карточка уже активна — ничего не делаем (она остаётся открытой)
+    if (card.classList.contains('active')) {
+        return;
+    }
+
+    // Закрываем все карточки в ряду
+    cards.forEach(c => c.classList.remove('active'));
+
+    // Открываем выбранную
+    card.classList.add('active');
+}
 
 // PRICE TOGGLE
 function togglePrice(el) {
