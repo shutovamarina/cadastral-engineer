@@ -15,8 +15,6 @@
 <body>
 
     <header>
-
-
         <nav id="nav">
             <ul>
                 <li><a href="#about" onclick="closeNav()">Обо мне</a></li>
@@ -31,7 +29,7 @@
             <div class="header-phones">
                 <div class="header-icons">
                     <a href="tel:+79146636131" title="Позвонить">
-                        <img src="icons/icons8-телефонная-трубка-50.png" alt="телефон">
+                        <img src="icons/icons8-телефон-50.png" alt="телефон">
                     </a>
                     <a href="https://wa.me/79146636131" target="_blank" title="WhatsApp">
                         <img src="icons/icons8-whatsapp-50.png" alt="WhatsApp">
@@ -63,10 +61,9 @@
             </div>
         </div>
     </section>
-
     <!-- ABOUT -->
     <section id="about" class="about">
-        <h2 class="section-title section-title-center">Обо мне</h2>
+        <h2 class="section-title section-title-center"><span class="hero-first-letter">О</span>бо мне</h2>
         <div class="about-section">
             <div class="about-img"><img src="img/1.jpg" alt="обо мне"></div>
 
@@ -82,101 +79,9 @@
         </div>
 
     </section>
-
-    <!-- SERVICES -->
-    <!-- <section id="services" class="services">
-        <h2 class="section-title">Услуги</h2>
-        <p class="section-subtitle">Полный спектр кадастровых работ</p>
-        <div class="services-grid">
-            <div class="service-card" onclick="scrollToPrice(0)">
-                <div class="service-img"><img src="img/cards/1.jpg" alt="card1"></div>
-                <div class="service-content">
-                    <h3>Межевой план</h3>
-
-                </div>
-            </div>
-            <div class="service-card" onclick="scrollToPrice(1)">
-                <div class="service-img"><img src="img/cards/2.jpg" alt="card2"></div>
-                <div class="service-content">
-                    <h3>Технический план</h3>
-
-                </div>
-            </div>
-            <div class="service-card" onclick="scrollToPrice(2)">
-                <div class="service-img"><img src="img/cards/3.jpg" alt="card3"></div>
-                <div class="service-content">
-                    <h3>Акт обследования</h3>
-
-                </div>
-            </div>
-            <div class="service-card" onclick="scrollToPrice(3)">
-                <div class="service-img"><img src="img/cards/4.jpg" alt="card4"></div>
-                <div class="service-content">
-                    <h3>Схема расположения земельного участка на КПТ</h3>
-
-                </div>
-            </div>
-            <div class="service-card" onclick="scrollToPrice(4)">
-                <div class="service-img"><img src="img/cards/5.jpg" alt="card5"></div>
-                <div class="service-content">
-                    <h3>Заключение специалиста</h3>
-
-                </div>
-            </div>
-            <div class="service-card" onclick="scrollToPrice(5)">
-                <div class="service-img"><img src="img/cards/6.jpg" alt="card6"></div>
-                <div class="service-content">
-                    <h3>Сопровождение кадастрового учёта и регистрации прав</h3>
-
-                </div>
-            </div>
-            <div class="service-card" onclick="scrollToPrice(6)">
-                <div class="service-img"><img src="https://image.qwenlm.ai/public_source/4e14336b-8131-4f75-9221-51b4b76d4a1d/124861d60-8e81-40f6-9b7c-07df76e4fd6d.png" alt=""></div>
-                <div class="service-content">
-                    <h3>XML-схемы стоимость по запросу</h3>
-
-                </div>
-            </div>
-            <div class="service-card" onclick="scrollToPrice(7)">
-                <div class="service-img"><img src="https://image.qwenlm.ai/public_source/4e14336b-8131-4f75-9221-51b4b76d4a1d/124861d60-8e81-40f6-9b7c-07df76e4fd6d.png" alt=""></div>
-                <div class="service-content">
-                    <h3>Обмерные работы (для проектирования, реконструкции и кадастра)</h3>
-
-                </div>
-            </div>
-            <div class="service-card" onclick="scrollToPrice(8)">
-                <div class="service-img"><img src="https://image.qwenlm.ai/public_source/4e14336b-8131-4f75-9221-51b4b76d4a1d/124861d60-8e81-40f6-9b7c-07df76e4fd6d.png" alt=""></div>
-                <div class="service-content">
-                    <h3>ЗОУИТ стоимость по запросу</h3>
-
-                </div>
-            </div>
-            <div class="service-card" onclick="scrollToPrice(9)">
-                <div class="service-img"><img src="https://image.qwenlm.ai/public_source/4e14336b-8131-4f75-9221-51b4b76d4a1d/124861d60-8e81-40f6-9b7c-07df76e4fd6d.png" alt=""></div>
-                <div class="service-content">
-                    <h3>Границы населенных пунктов и МО стоимость по запросу</h3>
-
-                </div>
-            </div>
-            <div class="service-card" onclick="scrollToPrice(10)">
-                <div class="service-img"><img src="https://image.qwenlm.ai/public_source/4e14336b-8131-4f75-9221-51b4b76d4a1d/124861d60-8e81-40f6-9b7c-07df76e4fd6d.png" alt=""></div>
-                <div class="service-content">
-                    <h3>Территориальные зоны стоимость по запросу</h3>
-
-                </div>
-            </div>
-            <div class="service-card" onclick="scrollToPrice(11)">
-                <div class="service-img"><img src="https://image.qwenlm.ai/public_source/4e14336b-8131-4f75-9221-51b4b76d4a1d/124861d60-8e81-40f6-9b7c-07df76e4fd6d.png" alt=""></div>
-                <div class="service-content">
-                    <h3>Карта (план) объекта землеустройства</h3>
-
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <section id="services" class="services-accordion">
-        <h2 class="section-title">Услуги</h2>
+    <!-- services -->
+    <section id="services" class="services">
+        <h2 class="section-title"><span class="hero-first-letter">У</span>слуги</h2>
 
         <!-- Ряд 1 -->
         <div class="services-row">
@@ -185,9 +90,7 @@
                 <div class="card-content">
                     <h3>Оформить дом или участок</h3>
                     <ul>
-                        <li>Технический план</li>
-                        <li>Межевой план</li>
-                        <li>Подача в Росреестр</li>
+                        <li>Подготовлю технический и межевой планы, подам в Росреестр.</li>
                     </ul>
                 </div>
             </div>
@@ -197,9 +100,7 @@
                 <div class="card-content">
                     <h3>Уточнить границы</h3>
                     <ul>
-                        <li>Обмеры</li>
-                        <li>Межевой план</li>
-                        <li>Согласование с соседями</li>
+                        <li>Проведу обмеры, подготовлю межевой план, проведу согласование с соседями, внесу границы в ЕГРН.</li>
                     </ul>
                 </div>
             </div>
@@ -209,8 +110,17 @@
                 <div class="card-content">
                     <h3>Оспорить площадь у застройщика</h3>
                     <ul>
-                        <li>Независимый обмер</li>
-                        <li>Заключение специалиста</li>
+                        <li>Проведу анализ территории, подготовлю схему на КПТ и межевой план для образования участка.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-card" onclick="openCard(this)">
+                <div class="card-vertical-title">Оспорить площадь у застройщика</div>
+                <div class="card-content">
+                    <h3>Оспорить площадь у застройщика</h3>
+                    <ul>
+                        <li>Сделаю независимый обмер и заключение специалиста для переговоров или суда.</li>
                     </ul>
                 </div>
             </div>
@@ -220,28 +130,50 @@
                 <div class="card-content">
                     <h3>Решить спор с соседями</h3>
                     <ul>
-                        <li>Проведение обмеров</li>
-                        <li>Подготовка межевого плана</li>
-                        <li>Акт согласования</li>
+                        <li>Проведу обмеры, подготовлю межевой план, акт согласования границ, заключение специалиста.</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- <div class="service-card" onclick="openCard(this)">
-                <div class="card-vertical-title">Карточка 5</div>
+            <div class="service-card" onclick="openCard(this)">
+                <div class="card-vertical-title">Узаконить перепланировку в квартире</div>
                 <div class="card-content">
-                    <h3>Карточка 5</h3>
-                    <p>Описание услуги будет добавлено позже.</p>
+                    <h3>Узаконить перепланировку в квартире</h3>
+                    <ul>
+                        <li>Подготовлю технический план после перепланировки, помогу с оформлением.</li>
+                    </ul>
                 </div>
-            </div> -->
+            </div>
 
-            <!--  <div class="service-card" onclick="openCard(this)">
-                <div class="card-vertical-title">Карточка 6</div>
+            <div class="service-card" onclick="openCard(this)">
+                <div class="card-vertical-title">Снять объект с учёта после сноса</div>
                 <div class="card-content">
-                    <h3>Карточка 6</h3>
-                    <p>Описание услуги будет добавлено позже.</p>
+                    <h3>Снять объект с учёта после сноса</h3>
+                    <ul>
+                        <li>Подготовлю акт обследования для исключения объекта из ЕГРН. Помогу подать заявление в Росреестр.</li>
+                    </ul>
                 </div>
-            </div> -->
+            </div>
+
+            <div class="service-card" onclick="openCard(this)">
+                <div class="card-vertical-title">Исправить площадь, которая не совпадает с фактической</div>
+                <div class="card-content">
+                    <h3>Исправить площадь, которая не совпадает с фактической</h3>
+                    <ul>
+                        <li>Проведу обмеры, подготовлю заключение и документы для исправления ошибки.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-card" onclick="openCard(this)">
+                <div class="card-vertical-title">Изменить территориальную зону</div>
+                <div class="card-content">
+                    <h3>Изменить территориальную зону</h3>
+                    <ul>
+                        <li>Подготовлю пакет документов для внесения изменений в зоны, описание границ, ведомость координат.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
         <!-- Ряд 2 -->
@@ -251,9 +183,7 @@
                 <div class="card-content">
                     <h3>Изменить территориальную зону</h3>
                     <ul>
-                        <li>Описание границ</li>
-                        <li>Ведомость координат</li>
-                        <li>Пакет документов для ЕГРН</li>
+                        <li>Подготовлю пакет документов для внесения изменений в зоны, описание границ, ведомость координат.</li>
                     </ul>
                 </div>
             </div>
@@ -273,8 +203,7 @@
                 <div class="card-content">
                     <h3>Снять объект с учёта после сноса</h3>
                     <ul>
-                        <li>Подготовка акта обследования</li>
-                        <li>Подача заявления в Росреестр</li>
+                        <li>Подготовлю акт обследования для исключения объекта из ЕГРН. Помогу подать заявление в Росреестр.</li>
                     </ul>
                 </div>
             </div>
@@ -284,31 +213,65 @@
                 <div class="card-content">
                     <h3>ЗОУИТ</h3>
                     <ul>
-                        <li>Документы для внесения сведений о ЗОУИТ в ЕГРН</li>
+                        <li>Подготовлю пакет документов для внесения в ЕГРН сведений о зонах с особыми условиями использования территории: описание границ, ведомость координат, XML-схемы.</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- <div class="service-card" onclick="openCard(this)">
-                <div class="card-vertical-title">Карточка 10</div>
+            <div class="service-card" onclick="openCard(this)">
+                <div class="card-vertical-title">Поставить на учёт объект незавершённого строительства</div>
                 <div class="card-content">
-                    <h3>Карточка 10</h3>
-                    <p>Описание услуги будет добавлено позже.</p>
+                    <h3>Поставить на учёт объект незавершённого строительства</h3>
+                    <ul>
+                        <li>Подготовлю технический план для постановки на кадастровый учёт.</li>
+                    </ul>
                 </div>
-            </div> -->
+            </div>
 
-            <!-- <div class="service-card" onclick="openCard(this)">
-                <div class="card-vertical-title">Карточка 11</div>
+            <div class="service-card" onclick="openCard(this)">
+                <div class="card-vertical-title">Установить или изменить границы ЗОУИТ</div>
                 <div class="card-content">
-                    <h3>Карточка 11</h3>
-                    <p>Описание услуги будет добавлено позже.</p>
+                    <h3>Установить или изменить границы ЗОУИТ</h3>
+                    <ul>
+                        <li>Подготовлю пакет документов для внесения в ЕГРН сведений о зонах с особыми условиями использования территории: описание границ, ведомость координат, XML-схемы.</li>
+                    </ul>
                 </div>
-            </div> -->
+            </div>
+
+            <div class="service-card" onclick="openCard(this)">
+                <div class="card-vertical-title">Изменить вид разрешённого использования участка</div>
+                <div class="card-content">
+                    <h3>Изменить вид разрешённого использования участка</h3>
+                    <ul>
+                        <li>Подготовлю заключение и пакет документов для изменения ВРИ.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-card" onclick="openCard(this)">
+                <div class="card-vertical-title">Оформить аренду земли под существующий объект</div>
+                <div class="card-content">
+                    <h3>Оформить аренду земли под существующий объект</h3>
+                    <ul>
+                        <li>Подготовлю схему расположения ЗУ на КПТ, межевой план для договора аренды.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-card" onclick="openCard(this)">
+                <div class="card-vertical-title">Описать границы НП или МО</div>
+                <div class="card-content">
+                    <h3>Описать границы НП или МО</h3>
+                    <ul>
+                        <li>Подготовлю карту-план объекта землеустройства и пакет документов для внесения сведений о границах НП или МО в ЕГРН.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
-
+    <!-- prices -->
     <section id="prices" class="prices">
-        <h2 class="section-title section-title-right">Стоимость услуг</h2>
+        <h2 class="section-title section-title-right"><span class="hero-first-letter">С</span>тоимость услуг</h2>
         <!-- <p class="section-subtitle">Прозрачное ценообразование</p> -->
 
         <!-- 1. Межевой план -->
@@ -668,9 +631,8 @@
         </div>
     </section>
     <!-- STAGES -->
-
     <section id="stages" class="stages-section">
-        <h2 class="section-title section-title-center">Этапы нашей работы с клиентом</h2>
+        <h2 class="section-title section-title-center"><span class="hero-first-letter">Э</span>тапы нашей работы с клиентом</h2>
         <!-- <p class="section-subtitle">Как мы работаем с вашим проектом</p> -->
 
         <div class="timeline">
@@ -732,9 +694,10 @@
             </div>
         </div>
     </section>
+    <!-- education -->
     <section id="education" class="education">
-        <h2 class="section-title section-title-right">Образование</h2>
-        <p class="section-subtitle">Дипломы и сертификаты</p>
+        <h2 class="section-title "><span class="hero-first-letter">О</span>бразование</h2>
+
         <div class="carousel-section">
             <div class="carousel-container">
                 <!-- <button class="carousel-btn prev" onclick="moveCarousel(-1)">‹</button> -->
@@ -757,12 +720,12 @@
     </section>
     <!-- FAQ -->
     <section id="faq" class="faq">
-        <h2 class="section-title">Часто задаваемые вопросы</h2>
+        <h2 class="section-title section-title-right"><span class="hero-first-letter">Ч</span>асто задаваемые вопросы</h2>
 
 
         <div class="faq-item">
             <div class="faq-q" onclick="toggleFaq(this)">
-                <span>Можно ли заказать только выездные обмеры без подготовки документов?</span>
+                <span>Можно-ли заказать только выездные обмеры без подготовки документов?</span>
                 <span class="faq-arrow">&#9947;</span>
             </div>
             <div class="faq-a">
@@ -811,11 +774,10 @@
             </div>
         </div>
     </section>
-
     <!-- CONTACTS -->
     <section id="contacts" class="contacts">
-        <h2 class="section-title">Контакты</h2>
-        <!--  <p class="section-subtitle section-title-right">Свяжитесь с нами удобным способом</p> -->
+        <h2 class="section-title"><span class="hero-first-letter">К</span>онтакты</h2>
+
         <div class="contacts-grid">
             <div class="contact-block contact-info">
                 <div class="business-card-section">

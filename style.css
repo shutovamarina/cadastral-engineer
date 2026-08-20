@@ -205,7 +205,7 @@ nav a::after {
     left: 0;
     width: 0;
     height: 1px;
-    background: var(--c4);
+    background: var(--c3);
     transition: width 0.3s;
 }
 
@@ -266,8 +266,9 @@ nav a:hover::after {
     -webkit-backdrop-filter: blur(10px);
     /* border: 3px solid var(--glass-glow); */
     border-radius: var(--radius);
-    padding: 60px 40px;
+    padding: 40px 40px;
     position: relative;
+    margin-top: 60px;
 }
 
 .hero h1 {
@@ -339,9 +340,10 @@ section {
 }
 
 .section-title {
-    font-size: 42px;
+    font-family: 'Nuqun', "Manrope", serif;
+    font-size: 50px;
     font-weight: 400;
-    margin-bottom: 14px;
+    margin-bottom: 40px;
     letter-spacing: 1px;
     color: var(--c3);
 }
@@ -364,7 +366,7 @@ section {
 
 /* ABOUT */
 
-.about .prices .faq {
+.about .prices .education .stages-section .services .faq .contacts {
     background: var(--glass-bg2);
     margin: 70px 40px;
 }
@@ -444,33 +446,6 @@ section {
 
 /* SERVICES */
 
-
-/* SERVICES ACCORDION */
-
-
-/* SERVICES ACCORDION */
-
-.services-accordion {
-    background: #2C2C2C;
-    padding: 70px 70px;
-}
-
-.services-accordion .section-title {
-    text-align: center;
-    color: #bfdd90;
-    font-size: 42px;
-    font-weight: 400;
-    margin-bottom: 14px;
-}
-
-.services-accordion .section-subtitle {
-    text-align: center;
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 16px;
-    margin-bottom: 50px;
-    font-style: italic;
-}
-
 .services-row {
     display: flex;
     gap: 20px;
@@ -485,8 +460,8 @@ section {
 .service-card {
     flex: 1;
     min-width: 60px;
-    background: linear-gradient(135deg, var(--c1) 0%, var(--bg-section) 30%, var(--c5) 60%, var(--bg-section) 100%);
-    border-radius: 10px;
+    background: linear-gradient(135deg, #000000 0%, #000000 25%, #2b331b 50%, #000000 75%, #000000 100%);
+    /* border-radius: 10px; */
     position: relative;
     overflow: hidden;
     cursor: pointer;
@@ -510,7 +485,9 @@ section {
     font-weight: 500;
     letter-spacing: 0.5px;
     padding: 20px 10px;
-    white-space: nowrap;
+    white-space: normal;
+    /* Разрешает стандартный перенос строк */
+    word-break: break-word;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -600,9 +577,9 @@ section {
 /* Мобильные — вертикальная раскладка */
 
 @media (max-width: 768px) {
-    .services-accordion {
+    /*  .services-accordion {
         padding: 50px 20px;
-    }
+    } */
     .services-row {
         flex-direction: column;
         height: auto;
@@ -696,6 +673,7 @@ section {
 .prices {
     background: var(--bg-section);
     margin: 70px 40px;
+    padding-top: 20px;
 }
 
 .price-category {
@@ -906,7 +884,7 @@ section {
 /* STAGES */
 
 .stages-section {
-    padding: 70px 40px;
+    padding: 0px 40px;
     max-width: 1280px;
     margin: 0 auto;
 }
@@ -1059,7 +1037,7 @@ section {
 /* EDUCATION CAROUSEL */
 
 .education {
-    background-image: url('img/bg/6.jpg');
+    background-image: url('img/bg/9.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1070,6 +1048,8 @@ section {
     position: relative;
     max-width: 100%;
     overflow: hidden;
+    right: 20px;
+    bottom: 40px;
 }
 
 .carousel-container {
@@ -1396,8 +1376,8 @@ section {
     width: 100%;
     max-width: 480px;
     min-height: 220px;
-    background: linear-gradient(135deg, var(--c1) 0%, var(--bg-section) 30%, var(--c5) 60%, var(--bg-section) 100%);
-    border-radius: var(--radius);
+    background: linear-gradient(135deg, #000000 0%, #4e5b32 30%, #4e5b32 60%, #000000 100%);
+    /* border-radius: var(--radius); */
     padding: 36px 40px;
     position: relative;
     overflow: hidden;
